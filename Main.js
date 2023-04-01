@@ -12,8 +12,8 @@ const paths = {
 
 const createWindow = () => {
 	const win = new BrowserWindow({
-		width: 480,
-		height: 270,
+		width: 960,
+		height: 540,
 		resizable: false,
 		icon: paths.icon,
 		//frame: false,
@@ -64,11 +64,6 @@ ipcMain.handle("searchDir", async (event, currentPath) => {
 		console.log(err)
 	})
 	return [result.canceled, result.filePaths]
-})
-
-ipcMain.on("redirectToTwitch", (event, args) => {
-	console.log("redirecting to twitch")
-	shell.openExternal('https://www.twitch.tv/chainavt')
 })
 
 function copyMods(installPath){

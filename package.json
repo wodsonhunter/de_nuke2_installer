@@ -1,7 +1,7 @@
 {
-  "name": "chainatown_installer",
+  "name": "de_nuke2_installer",
   "version": "1.0.0",
-  "description": "Instalador de mods para el servidor \"chainaTown\"",
+  "description": "Instalador de mods para el servidor \"de_nuke2\"",
   "main": "Main.js",
   "scripts": {
     "start": "electron-forge start",
